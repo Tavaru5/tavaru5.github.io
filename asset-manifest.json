@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d5b008f.chunk.css",
-    "main.js": "/static/js/main.8982bfd0.chunk.js",
-    "main.js.map": "/static/js/main.8982bfd0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.60203279.js",
-    "runtime-main.js.map": "/static/js/runtime-main.60203279.js.map",
-    "static/js/2.985e7728.chunk.js": "/static/js/2.985e7728.chunk.js",
-    "static/js/2.985e7728.chunk.js.map": "/static/js/2.985e7728.chunk.js.map",
+    "main.css": "/static/css/main.6e3e1da4.chunk.css",
+    "main.js": "/static/js/main.7546b439.chunk.js",
+    "main.js.map": "/static/js/main.7546b439.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.123dd0a8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.123dd0a8.js.map",
+    "static/js/2.c6a2f438.chunk.js": "/static/js/2.c6a2f438.chunk.js",
+    "static/js/2.c6a2f438.chunk.js.map": "/static/js/2.c6a2f438.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2979b11ce8606b19b8b79b0ed4bce8c1.js": "/precache-manifest.2979b11ce8606b19b8b79b0ed4bce8c1.js",
+    "precache-manifest.3b282d551766d2029103262f7cd2102a.js": "/precache-manifest.3b282d551766d2029103262f7cd2102a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1d5b008f.chunk.css.map": "/static/css/main.1d5b008f.chunk.css.map",
-    "static/js/2.985e7728.chunk.js.LICENSE.txt": "/static/js/2.985e7728.chunk.js.LICENSE.txt",
-    "static/media/githubIcon.png": "/static/media/githubIcon.ae8fc009.png",
-    "static/media/playAGameIcon.png": "/static/media/playAGameIcon.fca02dae.png",
-    "static/media/twitterIcon.png": "/static/media/twitterIcon.facc3ee7.png"
+    "static/css/main.6e3e1da4.chunk.css.map": "/static/css/main.6e3e1da4.chunk.css.map",
+    "static/js/2.c6a2f438.chunk.js.LICENSE.txt": "/static/js/2.c6a2f438.chunk.js.LICENSE.txt",
+    "static/media/aboutMeIcon.png": "/static/media/aboutMeIcon.542bab62.png",
+    "static/media/githubIcon.png": "/static/media/githubIcon.1be8fa31.png",
+    "static/media/playAGameIcon.png": "/static/media/playAGameIcon.2118ebde.png",
+    "static/media/portfolioIcon.png": "/static/media/portfolioIcon.a2344c47.png",
+    "static/media/restart.e3a6ead3.svg": "/static/media/restart.e3a6ead3.svg",
+    "static/media/twitterIcon.png": "/static/media/twitterIcon.c4933a3f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.60203279.js",
-    "static/js/2.985e7728.chunk.js",
-    "static/css/main.1d5b008f.chunk.css",
-    "static/js/main.8982bfd0.chunk.js"
+    "static/js/runtime-main.123dd0a8.js",
+    "static/js/2.c6a2f438.chunk.js",
+    "static/css/main.6e3e1da4.chunk.css",
+    "static/js/main.7546b439.chunk.js"
   ]
 }
