@@ -2,7 +2,7 @@
   "name": "kogsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tavaru5.github.io/kogsite",
+  "homepage": "https://tavaru5.github.io/kogsite",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
