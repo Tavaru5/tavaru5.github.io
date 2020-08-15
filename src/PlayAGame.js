@@ -31,7 +31,16 @@ class PlayAGame extends React.Component {
     var gameText;
 
     switch (this.state.buttonState) {
+      case states.HAPPY:
+        gameText = "Pog!! Hop in discord";
+        innerContent = retryContent;
+        break;
+      case states.SAD:
+        gameText = "Nega-pog :( btw I can't actually see your response";
+        innerContent = retryContent;
+        break;
       case states.BUTTONS:
+      default:
         gameText = "Hey dad wanna play some vidya?";
         innerContent = (
           <div>
@@ -51,14 +60,6 @@ class PlayAGame extends React.Component {
             </Button>
           </div>
         );
-        break;
-      case states.HAPPY:
-        gameText = "Pog!! Hop in discord";
-        innerContent = retryContent;
-        break;
-      case states.SAD:
-        gameText = "Nega-pog :( btw I can't actually see your response";
-        innerContent = retryContent;
         break;
     }
 
