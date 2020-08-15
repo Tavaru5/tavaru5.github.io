@@ -319,9 +319,6 @@ module.exports = function (webpackEnv) {
         PnpWebpackPlugin.moduleLoader(module),
       ],
     },
-    devServer: {
-      historyApiFallback: true,
-    },
     module: {
       strictExportPresence: true,
       rules: [
