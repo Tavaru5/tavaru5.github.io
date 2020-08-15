@@ -5,7 +5,7 @@ import IconRow from "./IconRow";
 export default function Home() {
   return (
     <div className="Home">
-      <p className="HeaderText">Tavaru(5/S)</p>
+      <p className="HeaderText">tavaru(5/s)</p>
       <IconRow />
     </div>
   );
