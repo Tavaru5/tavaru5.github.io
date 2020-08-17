@@ -1,5 +1,4 @@
 import React from "react";
-import "./IconRow.css";
 import { Link } from "react-router-dom";
 
 export default function IconRow() {
@@ -34,7 +33,7 @@ export default function IconRow() {
   return (
     <div className="IconRow">
       {icons.map((item, i) => {
-        const image = <img src={item.icon} className="LinkIcon" />;
+        const image = <img src={item.icon} style={styles.linkIcon} />;
         if (item.external) {
           return <a href={item.link}>{image}</a>;
         } else {
@@ -44,3 +43,12 @@ export default function IconRow() {
     </div>
   );
 }
+
+const styles = {
+  linkIcon: {
+    height: "calc(48px + 2vmin)",
+    width: "calc(48px + 2vmin)",
+    marginRight: "16px",
+    marginLeft: "16px",
+  },
+};
