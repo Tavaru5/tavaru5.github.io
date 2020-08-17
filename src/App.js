@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./Home";
-import PlayAGame from "./PlayAGame";
+import Home from "./home/Home";
+import PlayAGame from "./playAGame/PlayAGame";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

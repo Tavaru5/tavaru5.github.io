@@ -7,23 +7,27 @@ export default function IconRow() {
     {
       external: true,
       link: "https://www.github.com/tavaru5",
-      icon: require("./githubIcon.png"),
+      icon: require("../images/githubIcon.png"),
     },
     {
       external: true,
       link: "https://www.twitter.com/tavaru5",
-      icon: require("./twitterIcon.png"),
+      icon: require("../images/twitterIcon.png"),
     },
-    { external: false, link: "/aboutme", icon: require("./aboutMeIcon.png") },
+    {
+      external: false,
+      link: "/aboutme",
+      icon: require("../images/aboutMeIcon.png"),
+    },
     {
       external: false,
       link: "/playagame",
-      icon: require("./playAGameIcon.png"),
+      icon: require("../images/playAGameIcon.png"),
     },
     {
       external: false,
       link: "/portolio",
-      icon: require("./portfolioIcon.png"),
+      icon: require("../images/portfolioIcon.png"),
     },
   ];
 

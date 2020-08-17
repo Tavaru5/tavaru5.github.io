@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import "./PlayAGame.css";
-import { ReactComponent as Retry } from "./restart.svg";
+import { ReactComponent as Retry } from "../images/restart.svg";
 
 const states = {
   BUTTONS: 1,
