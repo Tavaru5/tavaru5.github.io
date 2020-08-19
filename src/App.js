@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./home/Home";
 import PlayAGame from "./playAGame/PlayAGame";
+import AboutMe from "./aboutMe/AboutMe";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,6 +15,9 @@ function App() {
           </Route>
           <Route path="/playagame">
             <PlayAGame />
+          </Route>
+          <Route path="/aboutme">
+            <AboutMe />
           </Route>
         </Switch>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Colors from "../Colors";
+import { Colors } from "../Constants";
 import PlayAGameBasic from "./PlayAGameBasic";
 
 class PlayAGame extends React.Component {

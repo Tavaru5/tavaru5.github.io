@@ -1,6 +1,6 @@
 import React from "react";
 import IconRow from "./IconRow";
-import Colors from "../Colors";
+import { Colors } from "../Constants";
 
 export default function Home() {
   return (
