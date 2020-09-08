@@ -1,6 +1,7 @@
 import React from "react";
 import { Colors, Elevation } from "../Constants";
 import { Spring } from "react-spring/renderprops";
+import AnimatedBar, { barDirections } from "./AnimatedBar";
 
 class AboutMe extends React.Component {
   constructor(props) {
@@ -9,39 +10,24 @@ class AboutMe extends React.Component {
   }
 
   render() {
-    let dividerWidth = this.state.animationLevel > 0 ? "10em" : "0em";
-    let frameSize = this.state.animationLevel > 0 ? "5.5em" : "0em";
-    let frameMargin = this.state.animationLevel > 0 ? "0em" : "5.5em";
-    let verticalFrameMargin = this.state.animationLevel > 0 ? "41em" : "46em";
+    let showBars = this.state.animationLevel > 0;
+
     return (
       <div style={styles.container}>
-        <Spring
-          from={{ height: "0em", marginBottom: "46em" }}
-          to={{ height: frameSize, marginBottom: verticalFrameMargin }}
-        >
-          {(frameHeight) => (
-            <div
-              style={{
-                ...styles.verticalFrame,
-                ...frameHeight,
-              }}
-            />
-          )}
-        </Spring>
-        <Spring
-          from={{ width: "0em", marginRight: "5.5em" }}
-          to={{ width: frameSize, marginRight: frameMargin }}
-        >
-          {(frameWidth) => (
-            <div
-              style={{
-                ...styles.horizontalFrame,
-                ...styles.flexStart,
-                ...frameWidth,
-              }}
-            />
-          )}
-        </Spring>
+        <AnimatedBar
+          show={showBars}
+          size={5}
+          direction={barDirections.DOWN}
+          addedMargin={41}
+          style={{ marginRight: "-0.5em" }}
+        />
+        <AnimatedBar
+          show={showBars}
+          size={5.5}
+          direction={barDirections.RIGHT}
+          style={{ marginBottom: "46em" }}
+        />
+
         <Spring
           from={{ marginTop: "50vw" }}
           to={{ marginTop: "0" }}
@@ -51,11 +37,13 @@ class AboutMe extends React.Component {
             <div style={{ ...upAnim, ...styles.floatingContainer }}>
               <div style={styles.textContainer}>
                 <h1 style={styles.titleText}>Hey!</h1>
-                <Spring from={{ width: "0em" }} to={{ width: dividerWidth }}>
-                  {(divAnim) => {
-                    return <div style={{ ...styles.divider, ...divAnim }} />;
-                  }}
-                </Spring>
+                <AnimatedBar
+                  show={showBars}
+                  size={10}
+                  direction={barDirections.RIGHT}
+                  thickness="0.75em"
+                />
+
                 <p style={styles.descriptionText}>
                   Big cat fan over here. Also big video game fan. I think AR/VR
                   are the absolute coolest, even though the only headset I
@@ -71,33 +59,20 @@ class AboutMe extends React.Component {
             </div>
           )}
         </Spring>
-        <Spring
-          from={{ width: "0em", marginLeft: "5.5em" }}
-          to={{ width: frameSize, marginLeft: frameMargin }}
-        >
-          {(frameWidth) => (
-            <div
-              style={{
-                ...styles.horizontalFrame,
-                ...styles.flexEnd,
-                ...frameWidth,
-              }}
-            />
-          )}
-        </Spring>
-        <Spring
-          from={{ height: "0em", marginTop: "46em" }}
-          to={{ height: frameSize, marginTop: verticalFrameMargin }}
-        >
-          {(frameHeight) => (
-            <div
-              style={{
-                ...styles.verticalFrame,
-                ...frameHeight,
-              }}
-            />
-          )}
-        </Spring>
+        <AnimatedBar
+          show={showBars}
+          size={5.5}
+          direction={barDirections.LEFT}
+          style={{ marginTop: "46em" }}
+        />
+
+        <AnimatedBar
+          show={showBars}
+          size={5}
+          direction={barDirections.UP}
+          addedMargin={41}
+          style={{ marginLeft: "-0.5em" }}
+        />
       </div>
     );
   }
@@ -141,20 +116,6 @@ const styles = {
   divider: {
     height: "0.75em",
     backgroundColor: "black",
-  },
-  horizontalFrame: {
-    backgroundColor: "black",
-    height: "0.5em",
-  },
-  verticalFrame: {
-    backgroundColor: "black",
-    width: "0.5em",
-  },
-  flexStart: {
-    marginBottom: "46em",
-  },
-  flexEnd: {
-    marginTop: "46em",
   },
 };
 
