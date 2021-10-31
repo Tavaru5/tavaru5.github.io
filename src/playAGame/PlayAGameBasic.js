@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import { ReactComponent as Retry } from "../images/restart.svg";
+import Header from "../Header";
 
 const states = {
   BUTTONS: 1,
@@ -57,8 +58,11 @@ class PlayAGameBasic extends React.Component {
 
     return (
       <div style={styles.background}>
-        <p style={styles.gameText}>{gameText}</p>
-        {innerContent}
+        <Header endOpacity={1} style={styles.header} />
+        <div style={styles.backgroundContent}>
+          <p style={styles.gameText}>{gameText}</p>
+          {innerContent}
+        </div>
       </div>
     );
   }
@@ -72,6 +76,10 @@ const styles = {
     backgroundColor: "black",
   },
   background: {
+    display: "flex",
+  },
+  header: {},
+  backgroundContent: {
     textAlign: "center",
     display: "flex",
     flexDirection: "column",

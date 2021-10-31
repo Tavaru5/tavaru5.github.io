@@ -2,6 +2,7 @@ import React from "react";
 import { Colors, Elevation } from "../Constants";
 import { Spring } from "react-spring/renderprops";
 import AnimatedBar, { barDirections } from "./AnimatedBar";
+import Header from "../Header";
 
 class AboutMe extends React.Component {
   constructor(props) {
@@ -11,21 +12,26 @@ class AboutMe extends React.Component {
 
   render() {
     let showBars = this.state.animationLevel > 0;
+    let backOpacity = showBars ? 1 : 0;
 
     return (
       <div style={styles.container}>
+        <Header endOpacity={backOpacity} style={{ marginRight: "0.5em" }} />
+
         <AnimatedBar
           show={showBars}
           size={5}
           direction={barDirections.DOWN}
           addedMargin={41}
           style={{ marginRight: "-0.5em" }}
+          sizeUnit={"vw"}
         />
         <AnimatedBar
           show={showBars}
           size={5.5}
           direction={barDirections.RIGHT}
-          style={{ marginBottom: "46em" }}
+          style={{ marginBottom: "46vw" }}
+          sizeUnit={"vw"}
         />
 
         <Spring
@@ -39,15 +45,18 @@ class AboutMe extends React.Component {
                 <h1 style={styles.titleText}>Hey!</h1>
                 <AnimatedBar
                   show={showBars}
-                  size={10}
+                  size={40}
                   direction={barDirections.RIGHT}
                   thickness="0.75em"
+                  sizeUnit={"%"}
                 />
 
                 <p style={styles.descriptionText}>
                   Big cat fan over here. Also big video game fan. I think AR/VR
-                  are the absolute coolest, even though the only headset I
-                  (currently) have is a Daydream.
+                  are the absolute coolest. I currently have a Valve Index, as
+                  well as a Google Daydream (RIP), but I've only done a small
+                  bit of VR development. I like AR development though! (link to
+                  be added to ARTableTop)
                 </p>
                 <p style={styles.descriptionText}>
                   I go by Tavarus, Tavaru5, Kog Mizzle (on League), and Sovellis
@@ -63,7 +72,8 @@ class AboutMe extends React.Component {
           show={showBars}
           size={5.5}
           direction={barDirections.LEFT}
-          style={{ marginTop: "46em" }}
+          style={{ marginTop: "46vw" }}
+          sizeUnit={"vw"}
         />
 
         <AnimatedBar
@@ -72,6 +82,7 @@ class AboutMe extends React.Component {
           direction={barDirections.UP}
           addedMargin={41}
           style={{ marginLeft: "-0.5em" }}
+          sizeUnit={"vw"}
         />
       </div>
     );
@@ -84,17 +95,19 @@ const styles = {
     justifyContent: "center",
     display: "flex",
     alignItems: "center",
+    height: "100vh",
     maxHeight: "100vh",
     minHeight: "100vh",
   },
   floatingContainer: {
     backgroundColor: Colors.oceanGray,
     display: "flex",
-    width: "60em",
+    width: "60%",
+    height: "36vw",
     boxShadow: Elevation.niceLilElevation,
   },
   titleText: {
-    fontSize: "2em",
+    fontSize: "1.5em",
     color: "black",
     fontWeight: "bold",
     marginBottom: "6px",
@@ -106,12 +119,11 @@ const styles = {
   },
   descriptionText: {
     color: "black",
-    fontSize: "1.2em",
+    fontSize: "1em",
   },
   meImage: {
     flex: 1,
-    maxHeight: "36em",
-    maxWidth: "30em",
+    height: "100%",
   },
   divider: {
     height: "0.75em",

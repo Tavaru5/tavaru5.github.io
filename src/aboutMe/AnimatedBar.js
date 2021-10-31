@@ -4,6 +4,7 @@ import { Spring } from "react-spring/renderprops";
 export default function AnimatedBar(props) {
   let addedMargin = props.addedMargin || 0;
   let thickness = props.thickness || "0.5em";
+  let sizeUnit = props.sizeUnit;
 
   let barStyle = { backgroundColor: "black" };
   let fromObject = {};
@@ -36,10 +37,11 @@ export default function AnimatedBar(props) {
       barStyle.height = thickness;
       break;
   }
-  fromObject[dynamicDimension] = "0em";
-  fromObject[marginDirection] = (props.size + addedMargin).toString() + "em";
-  toObject[dynamicDimension] = size.toString() + "em";
-  toObject[marginDirection] = (margin + addedMargin).toString() + "em";
+  fromObject[dynamicDimension] = "0" + sizeUnit;
+  fromObject[marginDirection] =
+    (props.size + addedMargin).toString() + sizeUnit;
+  toObject[dynamicDimension] = size.toString() + sizeUnit;
+  toObject[marginDirection] = (margin + addedMargin).toString() + sizeUnit;
   return (
     <Spring from={fromObject} to={toObject}>
       {(dynamicBarStyle) => (

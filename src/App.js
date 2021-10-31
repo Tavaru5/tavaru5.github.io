@@ -3,7 +3,7 @@ import Home from "./home/Home";
 import PlayAGame from "./playAGame/PlayAGame";
 import AboutMe from "./aboutMe/AboutMe";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
