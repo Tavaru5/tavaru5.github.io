@@ -3,7 +3,7 @@ import { Spring } from "react-spring/renderprops";
 
 export default function AnimatedBar(props) {
   let addedMargin = props.addedMargin || 0;
-  let thickness = props.thickness || "0.5em";
+  let thickness = props.thickness || "1em";
   let sizeUnit = props.sizeUnit;
 
   let barStyle = { backgroundColor: "black" };

@@ -23,7 +23,7 @@ class AboutMe extends React.Component {
           size={5}
           direction={barDirections.DOWN}
           addedMargin={41}
-          style={{ marginRight: "-0.5em" }}
+          style={{ marginRight: "-1em" }}
           sizeUnit={"vw"}
         />
         <AnimatedBar
@@ -81,7 +81,7 @@ class AboutMe extends React.Component {
           size={5}
           direction={barDirections.UP}
           addedMargin={41}
-          style={{ marginLeft: "-0.5em" }}
+          style={{ marginLeft: "-1em" }}
           sizeUnit={"vw"}
         />
       </div>
@@ -95,24 +95,25 @@ const styles = {
     justifyContent: "center",
     display: "flex",
     alignItems: "center",
-    height: "100vh",
-    maxHeight: "100vh",
     minHeight: "100vh",
   },
   floatingContainer: {
     backgroundColor: Colors.oceanGray,
     display: "flex",
     width: "60%",
-    height: "36vw",
+    minHeight: "36vw",
+    flexWrap: "wrap",
     boxShadow: Elevation.niceLilElevation,
+    overflow: "auto",
   },
   titleText: {
-    fontSize: "1.5em",
+    fontSize: "2em",
     color: "black",
     fontWeight: "bold",
     marginBottom: "6px",
   },
   textContainer: {
+    fontSize: "1.5em",
     flex: 1,
     paddingLeft: "2em",
     paddingRight: "2em",
@@ -122,12 +123,8 @@ const styles = {
     fontSize: "1em",
   },
   meImage: {
-    flex: 1,
     height: "100%",
-  },
-  divider: {
-    height: "0.75em",
-    backgroundColor: "black",
+    maxHeight: "36vw",
   },
 };
 

@@ -11,7 +11,7 @@ export default function Header(props) {
             textDecoration: "none",
             color: "#000",
             position: "absolute",
-            bottom: "49vw",
+            bottom: "95%",
             left: "9.5vw",
             ...opacityAnim,
             ...props.style,
