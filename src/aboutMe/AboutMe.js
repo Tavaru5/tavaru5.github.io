@@ -5,10 +5,6 @@ import Header from "../Header";
 import { useSpring, animated } from "react-spring";
 
 export default function AboutMe(props) {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { animationLevel: 0 };
-  // }
   const [animationLevel, setAnimationLevel] = useState(0)
   let showBars = animationLevel > 0;
   let backOpacity = showBars ? 1 : 0;
