@@ -1,11 +1,17 @@
 import React from "react";
-import { Spring } from "react-spring/renderprops";
 import { Link } from "react-router-dom";
+import { useSpring } from "react-spring";
 
 export default function Header(props) {
+  const styles = useSpring({
+    from: {
+      opacity: 0
+    },
+    to: {
+      opacity: props.endOpacity
+    }
+  })
   return (
-    <Spring from={{ opacity: 0 }} to={{ opacity: props.endOpacity }}>
-      {(opacityAnim) => (
         <Link
           style={{
             textDecoration: "none",
@@ -13,14 +19,12 @@ export default function Header(props) {
             position: "absolute",
             bottom: "95%",
             left: "9.5vw",
-            ...opacityAnim,
+            ...styles,
             ...props.style,
           }}
           to="/"
         >
           HOME
         </Link>
-      )}
-    </Spring>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
 import { ReactComponent as Retry } from "../images/restart.svg";
 import Header from "../Header";
 
@@ -37,7 +36,7 @@ class PlayAGameBasic extends React.Component {
         gameText = "Hey dad wanna play some vidya?";
         innerContent = (
           <div>
-            <Button
+            {/* <Button
               variant="contained"
               style={styles.buttonStyle}
               onClick={() => this.setState({ buttonState: states.HAPPY })}
@@ -50,7 +49,7 @@ class PlayAGameBasic extends React.Component {
               onClick={() => this.setState({ buttonState: states.SAD })}
             >
               no :(
-            </Button>
+            </Button> */}
           </div>
         );
         break;

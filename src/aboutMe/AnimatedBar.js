@@ -1,5 +1,5 @@
 import React from "react";
-import { Spring } from "react-spring/renderprops";
+import { useSpring, animated } from "react-spring";
 
 export default function AnimatedBar(props) {
   let addedMargin = props.addedMargin || 0;
@@ -42,12 +42,12 @@ export default function AnimatedBar(props) {
     (props.size + addedMargin).toString() + sizeUnit;
   toObject[dynamicDimension] = size.toString() + sizeUnit;
   toObject[marginDirection] = (margin + addedMargin).toString() + sizeUnit;
+  const dynamicBarStyle = useSpring({
+    from: fromObject,
+    to: toObject
+  })
   return (
-    <Spring from={fromObject} to={toObject}>
-      {(dynamicBarStyle) => (
-        <div style={{ ...barStyle, ...dynamicBarStyle, ...props.style }} />
-      )}
-    </Spring>
+        <animated.div style={{ ...barStyle, ...dynamicBarStyle, ...props.style }} />
   );
 }
 
