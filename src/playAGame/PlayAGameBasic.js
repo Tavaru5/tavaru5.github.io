@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Retry } from "../images/restart.svg";
-import Header from "../Header";
+import Header from "../header/Header";
 
 const states = {
   BUTTONS: 1,
@@ -57,7 +57,7 @@ class PlayAGameBasic extends React.Component {
 
     return (
       <div style={styles.background}>
-        <Header endOpacity={1} style={styles.header} />
+        <Header isMobile={true} />
         <div style={styles.backgroundContent}>
           <p style={styles.gameText}>{gameText}</p>
           {innerContent}
@@ -77,7 +77,6 @@ const styles = {
   background: {
     display: "flex",
   },
-  header: {},
   backgroundContent: {
     textAlign: "center",
     display: "flex",
