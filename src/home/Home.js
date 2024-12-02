@@ -1,12 +1,12 @@
 import React from "react";
-import IconRow from "./IconRow";
+import LinkRow from "./LinkRow";
 import { Colors } from "../Constants";
 
 export default function Home() {
   return (
     <div style={styles.home}>
       <p style={styles.headerText}>t a v a r u ( 5 / s )</p>
-      <IconRow />
+      <LinkRow />
     </div>
   );
 }
@@ -18,7 +18,7 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: Colors.boneWhite,
+    backgroundColor: Colors.oceanGray,
     minHeight: "100vh",
   },
   headerText: {

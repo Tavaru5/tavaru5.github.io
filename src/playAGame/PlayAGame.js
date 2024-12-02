@@ -28,7 +28,7 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: Colors.boneWhite,
+    backgroundColor: Colors.oceanGray,
     minHeight: "100vh",
   },
   gameText: {
