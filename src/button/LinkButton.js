@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Colors } from "./Constants";
+import { Colors } from "../Constants";
 import { Paper } from "@mui/material";
 
 export default function LinkButton(props) {

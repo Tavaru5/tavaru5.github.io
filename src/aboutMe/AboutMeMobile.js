@@ -2,6 +2,7 @@ import React from "react";
 import { Colors } from "../Constants";
 import Header from "../header/Header";
 import AnimatedBar, { barDirections } from "./AnimatedBar";
+import { Paper } from "@mui/material";
 
 export default function AboutMeMobile(props) {
 
@@ -32,7 +33,9 @@ export default function AboutMeMobile(props) {
           "pillow". My wife just calls me Silas.
         </p>
       </div>
-      {/* <img style={styles.meImage} src={require("../images/me.jpg")} /> */}
+      <Paper style={styles.meImage} square={true}>
+        <img style={{ width: "100%" }} src={require("../images/me.jpg")} />
+      </Paper>
     </div>
   );
 }
@@ -62,7 +65,9 @@ const styles = {
     fontSize: "1em",
   },
   meImage: {
-    height: "100%",
-    maxHeight: "36vw",
+    backgroundColor: Colors.boneWhite,
+    marginLeft: "10vw",
+    marginRight: "10vw",
+    padding: "5vw"
   },
 };

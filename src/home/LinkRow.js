@@ -1,5 +1,5 @@
 import React from "react";
-import LinkButton from "../LinkButton";
+import LinkButton from "../button/LinkButton";
 
 const links = [
   {
@@ -13,10 +13,6 @@ const links = [
   {
     link: "/playagame",
     description: "Play a game?",
-  },
-  {
-    link: "/portolio",
-    description: "Portfolio",
   },
 ];
 
