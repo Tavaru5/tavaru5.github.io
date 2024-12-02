@@ -1,29 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.acfcff8c.chunk.css",
-    "main.js": "/static/js/main.8a81a8f1.chunk.js",
-    "main.js.map": "/static/js/main.8a81a8f1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.123dd0a8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.123dd0a8.js.map",
-    "static/js/2.c2f66036.chunk.js": "/static/js/2.c2f66036.chunk.js",
-    "static/js/2.c2f66036.chunk.js.map": "/static/js/2.c2f66036.chunk.js.map",
+    "main.css": "/static/css/main.58cf97c1.css",
+    "main.js": "/static/js/main.2d206679.js",
+    "static/media/me.jpg": "/static/media/me.a2d161fb01d80583c9db.jpg",
     "index.html": "/index.html",
-    "precache-manifest.c678c13b78b79a7a182c980f168d9274.js": "/precache-manifest.c678c13b78b79a7a182c980f168d9274.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.acfcff8c.chunk.css.map": "/static/css/main.acfcff8c.chunk.css.map",
-    "static/js/2.c2f66036.chunk.js.LICENSE.txt": "/static/js/2.c2f66036.chunk.js.LICENSE.txt",
-    "static/media/aboutMeIcon.png": "/static/media/aboutMeIcon.542bab62.png",
-    "static/media/githubIcon.png": "/static/media/githubIcon.1be8fa31.png",
-    "static/media/me.jpg": "/static/media/me.d3537d25.jpg",
-    "static/media/playAGameIcon.png": "/static/media/playAGameIcon.2118ebde.png",
-    "static/media/portfolioIcon.png": "/static/media/portfolioIcon.a2344c47.png",
-    "static/media/restart.e3a6ead3.svg": "/static/media/restart.e3a6ead3.svg",
-    "static/media/twitterIcon.png": "/static/media/twitterIcon.c4933a3f.png"
+    "static/media/restart.svg": "/static/media/restart.8568dfabeb4126facc94df06e7795152.svg",
+    "main.58cf97c1.css.map": "/static/css/main.58cf97c1.css.map",
+    "main.2d206679.js.map": "/static/js/main.2d206679.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.123dd0a8.js",
-    "static/js/2.c2f66036.chunk.js",
-    "static/css/main.acfcff8c.chunk.css",
-    "static/js/main.8a81a8f1.chunk.js"
+    "static/css/main.58cf97c1.css",
+    "static/js/main.2d206679.js"
   ]
 }
